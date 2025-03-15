@@ -39,6 +39,7 @@
 install/
 log/
 build/
+src/cpp_pubsub/
 
 # Ignore generated docs
 *.dox

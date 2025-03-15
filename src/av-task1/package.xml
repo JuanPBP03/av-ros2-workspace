@@ -3,7 +3,7 @@
 <package format="3">
   <name>av-task1</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Package for Autonomous Vehicles ROS2 Task 1</description>
   <maintainer email="juanpablobecerra103@gmail.com">jp</maintainer>
   <license>Apache-2.0</license>
 
