@@ -17,7 +17,7 @@ target_include_directories(av-position PUBLIC
   $<INSTALL_INTERFACE:include>)
 target_compile_features(av-position PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
-install(TARGETS av-position
+install(TARGETS vehicle_position_publisher
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
