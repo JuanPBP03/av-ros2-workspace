@@ -19,12 +19,12 @@ add_executable(av-steering-control src/av-steering-control.cpp)
 
 ament_target_dependencies(av-position rclcpp geometry_msgs)
 ament_target_dependencies(av-speed rclcpp std_msgs)
-ament_target_dependencies(av-steering-controller geometry_msgs rclcpp std_msgs)
+ament_target_dependencies(av-steering-control geometry_msgs rclcpp std_msgs)
 
 install(TARGETS 
   av-position
   av-speed
-  av-steering-controller
+  av-steering-control
   DESTINATION lib/${PROJECT_NAME})
 
 
