@@ -19,15 +19,12 @@ add_executable(av-steering-control src/av-steering-control.cpp)
 
 ament_target_dependencies(av-position rclcpp geometry_msgs)
 ament_target_dependencies(av-speed rclcpp std_msgs)
-
-target_include_directories(av-position PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>)
-target_compile_features(av-position PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+ament_target_dependencies(av-steering-controller geometry_msgs rclcpp std_msgs)
 
 install(TARGETS 
   av-position
   av-speed
+  av-steering-controller
   DESTINATION lib/${PROJECT_NAME})
 
 
